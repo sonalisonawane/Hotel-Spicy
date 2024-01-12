@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Header styling starts */
+.Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  padding:20px;
+  /* background-color: #f7ae72; */
+  box-shadow: 4px 4px 6px grey;
+}
+.logo{
+ 
+      width: 145px;
+      height: 50px;
+      background: transparent;
+      margin-left: 63px;
+  }
+
+.nav-links{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 20px;
+}
+.nav-links li{
+  list-style: none;
+  margin: 20px;
+}
+.nav-links li i{
+  margin-right: 10px;
+  font-weight: bold;
+}
+/* Body styling Starts */
+
+.body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.search input{
+  width: 40%;
+  margin: 20px;
+  border-radius: 7px;
+  height: 41px;    
+  border: none;
+  box-shadow: 0px 2px 4px 1px gray;    
+}
+.search input::placeholder{
+  text-align: center;
+}
+.search .searchbtn{
+  width: 13%;
+  height: 37px;
+  margin: 23px 0px 0px 0px;
+  background-color: #ee855f;
+  border-radius: 6px;
+  border: none;
+}
+div .card{
+  padding: 10px;
+  margin:20px;
+  width:250px;
+  height: 300px;
+  border-radius: 14px;
+  box-shadow: 1px 3px 6px gray;
+
+}
+.card img{    
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius:9px;
+}
+h3.restaurantName {
+  margin-top: 10px;
+}
+.card h5{
+  color:rgba(2, 6, 12, 0.6);
+  font-weight: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Footer Styling */
+div.footer {
+  height: 71px;
+  background-color: lightgrey;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+i.fa-solid.fa-heart {
+  color: red;
+  padding-left: 20px;
+  padding-right: 4px;
+}
+
+i.fa-solid.fa-copyright {
+  margin-left: 30px;
+  margin-right: 4px;
+}
+.footer strong{
+  font-weight: 200;
+  padding-left: 4px;
+  color: orangered;
 }
